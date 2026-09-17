@@ -1,0 +1,19 @@
+{
+  "model_weights": "C:/Users/india/Desktop/Inspect Model __ camera/Yolo Models/yolo11l_saved_model/yolo11l.pt",
+  "model_dir": "C:\\Users\\india\\Desktop\\Inspect Model __ camera\\Yolo Models\\yolo11l_saved_model",
+  "last_dataset_dir": "C:/Users/india/Desktop/Roboflow/projects/phone/exports/phone version 1",
+  "last_output_dir": "",
+  "roboflow_api_key": "",
+  "roboflow_workspace": "",
+  "roboflow_project": "",
+  "confidence": 0.25,
+  "autolabel_classes": [
+    0,
+    67
+  ],
+  "autolabel_names": {
+    "0": "person",
+    "67": "cell phone"
+  },
+  "theme": "dark"
+}
