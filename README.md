@@ -60,7 +60,7 @@ On start, MyLabeler opens the most recently changed project under `projects\` th
 ### Tests
 
 ```powershell
-venv\Scripts\python.exe -m pip install -r requirements-dev.txt
+venv\Scripts\python.exe -m pip install -r requirements.txt
 venv\Scripts\python.exe -m pytest
 ```
 
@@ -372,7 +372,6 @@ projects\<project>\
 Roboflow\
 ├── main.py                    Starts the Qt app
 ├── requirements.txt
-├── requirements-dev.txt       requirements.txt + pytest
 ├── pytest.ini
 ├── tests\                     pytest suite for core\ (one test_<module>.py per module)
 ├── core\

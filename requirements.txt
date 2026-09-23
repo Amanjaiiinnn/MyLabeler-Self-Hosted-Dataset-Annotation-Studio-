@@ -7,3 +7,4 @@ Pillow>=10.2
 
 # optional - only needed for the "Publish to Roboflow" card on the Tools page
 roboflow>=1.1
+pytest>=8.0

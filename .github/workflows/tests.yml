@@ -1,0 +1,24 @@
+name: tests
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  pytest:
+    runs-on: windows-latest        # same OS the app is developed on
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      # Only what core/ needs. Skips ultralytics/torch and PySide6 (several GB),
+      # which the tests never import.
+      - name: Install dependencies
+        run: pip install pytest albumentations opencv-python numpy Pillow
+
+      - name: Run tests
+        run: pytest
