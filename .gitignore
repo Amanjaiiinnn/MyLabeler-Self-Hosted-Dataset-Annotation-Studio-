@@ -1,0 +1,14 @@
+# local settings - contains the Roboflow API key
+settings.json
+
+venv/
+__pycache__/
+*.pyc
+
+# project data and generated artifacts
+projects/
+output/
+runs/
+.trash/
+*.pt
+.pytest_cache/
